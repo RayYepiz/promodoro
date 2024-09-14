@@ -6,7 +6,7 @@ function App() {
   return (
     <>
     <div>
-      <h1>Hello World</h1>
+      <h1>Changing and adjusting some settings</h1>
     </div>
     </>
   )
