@@ -1,15 +1,13 @@
-import { React, useState } from 'react'
-import './App.css'
+import { React, useState } from "react";
+import "./App.css";
+import Timer from "./components/Timer";
 
 function App() {
-
   return (
     <>
-    <div>
-      <h1>Changing and adjusting some settings</h1>
-    </div>
+      <Timer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
