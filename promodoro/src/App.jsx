@@ -4,9 +4,10 @@ import Timer from "./components/Timer";
 
 function App() {
   return (
-    <>
-      <Timer />
-    </>
+    <div className="timersWrapper">
+      <Timer time={"25:00"} />
+      <Timer time={"05:00"} />
+    </div>
   );
 }
 
