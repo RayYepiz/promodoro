@@ -1,0 +1,158 @@
+:root {
+    --primary-clr: #01161E;
+    --secondary-clr: #AEC3B0;
+    --accent-clr: #124559;
+    --accent2-clr: #598392;
+    --accent3-clr: #EFF6E0;
+    --white-clr:#fff;
+    --off-white-clr: #f3f3f3;
+    --black-clr: #000000;
+    --black-accent: #36454f;
+}
+
+body {
+    background-color: var(--off-white-clr);
+    font-family: "Caveat";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.header {
+    position: relative;
+    top: 2em;
+    font-size: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.timersWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+}
+
+.timerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    font-size: medium;
+    color: var(--black-clr)
+}
+
+.primaryTimer {
+    padding: 5px;
+    background-color: var(--white-clr);
+    border-radius: 5px;
+    box-shadow: -3px 5px 5px rgba(0,0,0,.3);
+}
+
+.breakTimer {
+    padding: 5px;
+    background-color: var(--white-clr);
+    border-radius: 5px;
+    box-shadow: -3px 5px 5px rgba(0,0,0,.3);
+
+}
+
+button {
+    font-family:"caveat";
+    color: var(--white-clr);
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid rgba(250, 250, 250, 0.5);
+    box-shadow: -3px 2px 5px rgba(0,0,0,.3);
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#startBtn {
+    background-color: var(--accent-clr);
+}
+
+#restartBtn {
+    background-color: var(--accent2-clr);
+}
+
+#pauseBtn {
+    background-color: var(--primary-clr);
+}
+
+@media (min-width: 600px){
+    .timersWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        height: 100vh;
+    }
+
+    .timerWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 275px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 48px;
+        color: var(--black-clr)
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        height: 1em;
+        width: auto;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 599.999px) {
+
+    .timerWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+        font-size: 32px;
+        color: var(--black-clr)
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        height: 1em;
+        width: auto;
+    }
+}
+
+
+
