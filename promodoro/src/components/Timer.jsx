@@ -1,6 +1,6 @@
 import { React, useState, useEffect, useRef } from "react";
 
-function Timer({ time }) {
+function Timer({ time, title }) {
   const [timer, setTimer] = useState(time);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
@@ -42,6 +42,7 @@ function Timer({ time }) {
 
   return (
     <div className="timerWrapper">
+      <h1 className="timerTitle">{title}</h1>
       <h1>{timer}</h1>
       <div className="buttons">
         <button id="startBtn" onClick={start}>
